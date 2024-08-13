@@ -21,21 +21,21 @@ async function knowWeather(city){
     document.querySelector('#humidity').innerHTML= data.main.humidity +'%';
 
     if(data.weather[0].main == "Clouds"){
-        weatherImg.src = "images/weather-app-img/images/clouds.png";
+        weatherImg.src = "/clouds.png";
      }
       else if(data.weather[0].main == "Haze"){
-        weatherImg.src = "images/weather-app-img/images/drizzle.png"
+        weatherImg.src = "/drizzle.png"
         }
         else if(data.weather[0].main == "Mist"){
-            weatherImg.src = 'images/weather-app-img/images/mist.png'
+            weatherImg.src = '/mist.png'
           }else if(data.weather[0].main == "Rain"){
-            weatherImg.src = 'images/weather-app-img/images/rain.png'
+            weatherImg.src = '/rain.png'
           }
           else if(data.weather[0].main == "Snow"){
-            weatherImg.src = 'images/weather-app-img/images/snow.png'
+            weatherImg.src = '/snow.png'
           }
           else if(data.weather[0].main == "Clear")
-          weatherImg.src = "images/weather-app-img/images/clear.png";
+          weatherImg.src = "/clear.png";
 
 
     
